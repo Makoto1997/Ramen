@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0EBF34F82833DBFA0093800A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F72833DBFA0093800A /* AppDelegate.swift */; };
 		0EBF34FA2833DBFA0093800A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F92833DBFA0093800A /* SceneDelegate.swift */; };
-		0EBF34FC2833DBFA0093800A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34FB2833DBFA0093800A /* ViewController.swift */; };
-		0EBF34FF2833DBFA0093800A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF34FD2833DBFA0093800A /* Main.storyboard */; };
 		0EBF35012833DBFC0093800A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF35002833DBFC0093800A /* Assets.xcassets */; };
 		0EBF35042833DBFC0093800A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF35022833DBFC0093800A /* LaunchScreen.storyboard */; };
 		0EBF350F2833DBFC0093800A /* RamenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF350E2833DBFC0093800A /* RamenTests.swift */; };
@@ -24,6 +22,8 @@
 		0EBF35352833E2230093800A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35342833E2220093800A /* FirebaseFirestore */; };
 		0EBF35372833E2230093800A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35362833E2230093800A /* FirebaseFirestoreSwift */; };
 		0EBF35392833E2230093800A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35382833E2230093800A /* FirebaseStorage */; };
+		0EBF353B2833E3FC0093800A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF353A2833E3FC0093800A /* SignUpViewController.swift */; };
+		0EBF353D2833E40F0093800A /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF353C2833E40F0093800A /* SignUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		0EBF34F42833DBFA0093800A /* Ramen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ramen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBF34F72833DBFA0093800A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBF34F92833DBFA0093800A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0EBF34FB2833DBFA0093800A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0EBF34FE2833DBFA0093800A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EBF35002833DBFC0093800A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EBF35032833DBFC0093800A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EBF35052833DBFC0093800A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		0EBF35142833DBFD0093800A /* RamenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBF35182833DBFD0093800A /* RamenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenUITests.swift; sourceTree = "<group>"; };
 		0EBF351A2833DBFD0093800A /* RamenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EBF353A2833E3FC0093800A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0EBF353C2833E40F0093800A /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 			children = (
 				0EBF34F72833DBFA0093800A /* AppDelegate.swift */,
 				0EBF34F92833DBFA0093800A /* SceneDelegate.swift */,
-				0EBF34FB2833DBFA0093800A /* ViewController.swift */,
-				0EBF34FD2833DBFA0093800A /* Main.storyboard */,
+				0EBF353C2833E40F0093800A /* SignUp.storyboard */,
+				0EBF353A2833E3FC0093800A /* SignUpViewController.swift */,
 				0EBF35002833DBFC0093800A /* Assets.xcassets */,
 				0EBF35022833DBFC0093800A /* LaunchScreen.storyboard */,
 				0EBF35052833DBFC0093800A /* Info.plist */,
@@ -264,7 +264,7 @@
 			files = (
 				0EBF35042833DBFC0093800A /* LaunchScreen.storyboard in Resources */,
 				0EBF35012833DBFC0093800A /* Assets.xcassets in Resources */,
-				0EBF34FF2833DBFA0093800A /* Main.storyboard in Resources */,
+				0EBF353D2833E40F0093800A /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBF34FC2833DBFA0093800A /* ViewController.swift in Sources */,
+				0EBF353B2833E3FC0093800A /* SignUpViewController.swift in Sources */,
 				0EBF34F82833DBFA0093800A /* AppDelegate.swift in Sources */,
 				0EBF34FA2833DBFA0093800A /* SceneDelegate.swift in Sources */,
 			);
@@ -328,14 +328,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0EBF34FD2833DBFA0093800A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EBF34FE2833DBFA0093800A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0EBF35022833DBFC0093800A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -451,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
