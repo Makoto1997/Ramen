@@ -16,6 +16,14 @@
 		0EBF350F2833DBFC0093800A /* RamenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF350E2833DBFC0093800A /* RamenTests.swift */; };
 		0EBF35192833DBFD0093800A /* RamenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF35182833DBFD0093800A /* RamenUITests.swift */; };
 		0EBF351B2833DBFD0093800A /* RamenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF351A2833DBFD0093800A /* RamenUITestsLaunchTests.swift */; };
+		0EBF35292833E0070093800A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35282833E0070093800A /* RxCocoa */; };
+		0EBF352B2833E0070093800A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF352A2833E0070093800A /* RxRelay */; };
+		0EBF352D2833E0070093800A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF352C2833E0070093800A /* RxSwift */; };
+		0EBF35302833E0E60093800A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF352F2833E0E60093800A /* Moya */; };
+		0EBF35332833E2220093800A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35322833E2220093800A /* FirebaseAuth */; };
+		0EBF35352833E2230093800A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35342833E2220093800A /* FirebaseFirestore */; };
+		0EBF35372833E2230093800A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35362833E2230093800A /* FirebaseFirestoreSwift */; };
+		0EBF35392833E2230093800A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0EBF35382833E2230093800A /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBF352D2833E0070093800A /* RxSwift in Frameworks */,
+				0EBF35332833E2220093800A /* FirebaseAuth in Frameworks */,
+				0EBF352B2833E0070093800A /* RxRelay in Frameworks */,
+				0EBF35372833E2230093800A /* FirebaseFirestoreSwift in Frameworks */,
+				0EBF35302833E0E60093800A /* Moya in Frameworks */,
+				0EBF35392833E2230093800A /* FirebaseStorage in Frameworks */,
+				0EBF35292833E0070093800A /* RxCocoa in Frameworks */,
+				0EBF35352833E2230093800A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +159,16 @@
 			dependencies = (
 			);
 			name = Ramen;
+			packageProductDependencies = (
+				0EBF35282833E0070093800A /* RxCocoa */,
+				0EBF352A2833E0070093800A /* RxRelay */,
+				0EBF352C2833E0070093800A /* RxSwift */,
+				0EBF352F2833E0E60093800A /* Moya */,
+				0EBF35322833E2220093800A /* FirebaseAuth */,
+				0EBF35342833E2220093800A /* FirebaseFirestore */,
+				0EBF35362833E2230093800A /* FirebaseFirestoreSwift */,
+				0EBF35382833E2230093800A /* FirebaseStorage */,
+			);
 			productName = Ramen;
 			productReference = 0EBF34F42833DBFA0093800A /* Ramen.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +241,11 @@
 				Base,
 			);
 			mainGroup = 0EBF34EB2833DBFA0093800A;
+			packageReferences = (
+				0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				0EBF352E2833E0E60093800A /* XCRemoteSwiftPackageReference "Moya" */,
+				0EBF35312833E2220093800A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0EBF34F52833DBFA0093800A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -443,9 +474,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,7 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,9 +504,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -604,6 +637,76 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+		0EBF352E2833E0E60093800A /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+		0EBF35312833E2220093800A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EBF35282833E0070093800A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		0EBF352A2833E0070093800A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		0EBF352C2833E0070093800A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		0EBF352F2833E0E60093800A /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF352E2833E0E60093800A /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		0EBF35322833E2220093800A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF35312833E2220093800A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0EBF35342833E2220093800A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF35312833E2220093800A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0EBF35362833E2230093800A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF35312833E2220093800A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		0EBF35382833E2230093800A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EBF35312833E2220093800A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EBF34EC2833DBFA0093800A /* Project object */;
 }
