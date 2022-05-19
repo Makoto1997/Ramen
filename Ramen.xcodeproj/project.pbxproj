@@ -10,6 +10,8 @@
 		0E15036E28340542002EBC3A /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15036D28340542002EBC3A /* UIColor+.swift */; };
 		0E1503722834135D002EBC3A /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1503712834135D002EBC3A /* SignIn.storyboard */; };
 		0E15037428341391002EBC3A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15037328341391002EBC3A /* SignInViewController.swift */; };
+		0E15037628367573002EBC3A /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15037528367573002EBC3A /* FirebaseManager.swift */; };
+		0E150378283677AF002EBC3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E150377283677AF002EBC3A /* GoogleService-Info.plist */; };
 		0EBF34F82833DBFA0093800A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F72833DBFA0093800A /* AppDelegate.swift */; };
 		0EBF34FA2833DBFA0093800A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F92833DBFA0093800A /* SceneDelegate.swift */; };
 		0EBF35012833DBFC0093800A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF35002833DBFC0093800A /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		0E15036D28340542002EBC3A /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		0E1503712834135D002EBC3A /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		0E15037328341391002EBC3A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0E15037528367573002EBC3A /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		0E150377283677AF002EBC3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EBF34F42833DBFA0093800A /* Ramen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ramen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBF34F72833DBFA0093800A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBF34F92833DBFA0093800A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,11 +146,13 @@
 				0EBF34F72833DBFA0093800A /* AppDelegate.swift */,
 				0EBF34F92833DBFA0093800A /* SceneDelegate.swift */,
 				0E15036D28340542002EBC3A /* UIColor+.swift */,
+				0E15037528367573002EBC3A /* FirebaseManager.swift */,
 				0E15036F28340B90002EBC3A /* SignUp */,
 				0E1503702834132E002EBC3A /* SignIn */,
 				0EBF35002833DBFC0093800A /* Assets.xcassets */,
 				0EBF35022833DBFC0093800A /* LaunchScreen.storyboard */,
 				0EBF35052833DBFC0093800A /* Info.plist */,
+				0E150377283677AF002EBC3A /* GoogleService-Info.plist */,
 			);
 			path = Ramen;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			files = (
 				0E1503722834135D002EBC3A /* SignIn.storyboard in Resources */,
 				0EBF35042833DBFC0093800A /* LaunchScreen.storyboard in Resources */,
+				0E150378283677AF002EBC3A /* GoogleService-Info.plist in Resources */,
 				0EBF35012833DBFC0093800A /* Assets.xcassets in Resources */,
 				0EBF353D2833E40F0093800A /* SignUp.storyboard in Resources */,
 			);
@@ -315,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E15037628367573002EBC3A /* FirebaseManager.swift in Sources */,
 				0EBF353B2833E3FC0093800A /* SignUpViewController.swift in Sources */,
 				0E15036E28340542002EBC3A /* UIColor+.swift in Sources */,
 				0EBF34F82833DBFA0093800A /* AppDelegate.swift in Sources */,
