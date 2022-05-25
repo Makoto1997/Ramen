@@ -10,7 +10,6 @@
 		0E15036E28340542002EBC3A /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15036D28340542002EBC3A /* UIColor+.swift */; };
 		0E1503722834135D002EBC3A /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1503712834135D002EBC3A /* SignIn.storyboard */; };
 		0E15037428341391002EBC3A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15037328341391002EBC3A /* SignInViewController.swift */; };
-		0E15037628367573002EBC3A /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15037528367573002EBC3A /* FirebaseManager.swift */; };
 		0E150378283677AF002EBC3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E150377283677AF002EBC3A /* GoogleService-Info.plist */; };
 		0EBF34F82833DBFA0093800A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F72833DBFA0093800A /* AppDelegate.swift */; };
 		0EBF34FA2833DBFA0093800A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F92833DBFA0093800A /* SceneDelegate.swift */; };
@@ -52,7 +51,6 @@
 		0E15036D28340542002EBC3A /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		0E1503712834135D002EBC3A /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		0E15037328341391002EBC3A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		0E15037528367573002EBC3A /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		0E150377283677AF002EBC3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0EBF34F42833DBFA0093800A /* Ramen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ramen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBF34F72833DBFA0093800A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +118,53 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
+		0E15037B28367EE3002EBC3A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0E15036D28340542002EBC3A /* UIColor+.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		0E15037C28367EFE002EBC3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E15037D28367F10002EBC3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E15036F28340B90002EBC3A /* SignUp */,
+				0E1503702834132E002EBC3A /* SignIn */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E15037E28367F26002EBC3A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E15037F28367F54002EBC3A /* SignUp */,
+				0E15038028367F66002EBC3A /* SignIn */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E15037F28367F54002EBC3A /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		0E15038028367F66002EBC3A /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		0EBF34EB2833DBFA0093800A = {
 			isa = PBXGroup;
 			children = (
@@ -145,10 +190,10 @@
 			children = (
 				0EBF34F72833DBFA0093800A /* AppDelegate.swift */,
 				0EBF34F92833DBFA0093800A /* SceneDelegate.swift */,
-				0E15036D28340542002EBC3A /* UIColor+.swift */,
-				0E15037528367573002EBC3A /* FirebaseManager.swift */,
-				0E15036F28340B90002EBC3A /* SignUp */,
-				0E1503702834132E002EBC3A /* SignIn */,
+				0E15037B28367EE3002EBC3A /* Utility */,
+				0E15037C28367EFE002EBC3A /* Model */,
+				0E15037D28367F10002EBC3A /* View */,
+				0E15037E28367F26002EBC3A /* ViewModel */,
 				0EBF35002833DBFC0093800A /* Assets.xcassets */,
 				0EBF35022833DBFC0093800A /* LaunchScreen.storyboard */,
 				0EBF35052833DBFC0093800A /* Info.plist */,
@@ -322,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E15037628367573002EBC3A /* FirebaseManager.swift in Sources */,
 				0EBF353B2833E3FC0093800A /* SignUpViewController.swift in Sources */,
 				0E15036E28340542002EBC3A /* UIColor+.swift in Sources */,
 				0EBF34F82833DBFA0093800A /* AppDelegate.swift in Sources */,

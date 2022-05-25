@@ -91,18 +91,12 @@
                                                 <state key="normal" title="新規登録">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="signUp:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="y0Y-tP-jUQ"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bL9-gM-Lfk">
                                                 <rect key="frame" x="0.0" y="67" width="199" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="既にアカウントをお持ちの方"/>
-                                                <connections>
-                                                    <action selector="signInPage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Oj8-S4-QLW"/>
-                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -119,6 +113,7 @@
                     <connections>
                         <outlet property="confirmTextField" destination="bVW-Pg-gdW" id="4YK-GY-EPy"/>
                         <outlet property="emailTextField" destination="G9d-qI-Wg5" id="vQM-6p-f98"/>
+                        <outlet property="haveAccountButton" destination="bL9-gM-Lfk" id="DjA-Gm-8i9"/>
                         <outlet property="passwordTextField" destination="YfA-yI-Bhh" id="gLd-gU-QnM"/>
                         <outlet property="signUpButton" destination="jRn-9l-w3e" id="BeP-Og-A8V"/>
                     </connections>
