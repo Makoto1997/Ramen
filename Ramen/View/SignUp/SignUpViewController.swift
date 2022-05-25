@@ -13,14 +13,10 @@ final class SignUpViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     @IBOutlet private weak var confirmTextField: UITextField!
     @IBOutlet private weak var signUpButton: UIButton!
+    @IBOutlet private weak var haveAccountButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction private func signUp(_ sender: Any) {
-    }
-    
-    @IBAction private func signInPage(_ sender: Any) {
-    }
 }
