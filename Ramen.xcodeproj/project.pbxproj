@@ -11,6 +11,7 @@
 		0E1503722834135D002EBC3A /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1503712834135D002EBC3A /* SignIn.storyboard */; };
 		0E15037428341391002EBC3A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15037328341391002EBC3A /* SignInViewController.swift */; };
 		0E150378283677AF002EBC3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E150377283677AF002EBC3A /* GoogleService-Info.plist */; };
+		0E150383283FB7B5002EBC3A /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = 0E150382283FB7B5002EBC3A /* RxOptional */; };
 		0EBF34F82833DBFA0093800A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F72833DBFA0093800A /* AppDelegate.swift */; };
 		0EBF34FA2833DBFA0093800A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF34F92833DBFA0093800A /* SceneDelegate.swift */; };
 		0EBF35012833DBFC0093800A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF35002833DBFC0093800A /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 				0EBF352B2833E0070093800A /* RxRelay in Frameworks */,
 				0EBF35372833E2230093800A /* FirebaseFirestoreSwift in Frameworks */,
 				0EBF35302833E0E60093800A /* Moya in Frameworks */,
+				0E150383283FB7B5002EBC3A /* RxOptional in Frameworks */,
 				0EBF35392833E2230093800A /* FirebaseStorage in Frameworks */,
 				0EBF35292833E0070093800A /* RxCocoa in Frameworks */,
 				0EBF35352833E2230093800A /* FirebaseFirestore in Frameworks */,
@@ -244,6 +246,7 @@
 				0EBF35342833E2220093800A /* FirebaseFirestore */,
 				0EBF35362833E2230093800A /* FirebaseFirestoreSwift */,
 				0EBF35382833E2230093800A /* FirebaseStorage */,
+				0E150382283FB7B5002EBC3A /* RxOptional */,
 			);
 			productName = Ramen;
 			productReference = 0EBF34F42833DBFA0093800A /* Ramen.app */;
@@ -321,6 +324,7 @@
 				0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */,
 				0EBF352E2833E0E60093800A /* XCRemoteSwiftPackageReference "Moya" */,
 				0EBF35312833E2220093800A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0E150381283FB7B5002EBC3A /* XCRemoteSwiftPackageReference "RxOptional" */,
 			);
 			productRefGroup = 0EBF34F52833DBFA0093800A /* Products */;
 			projectDirPath = "";
@@ -709,6 +713,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0E150381283FB7B5002EBC3A /* XCRemoteSwiftPackageReference "RxOptional" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxOptional";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.5;
+			};
+		};
 		0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -736,6 +748,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0E150382283FB7B5002EBC3A /* RxOptional */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E150381283FB7B5002EBC3A /* XCRemoteSwiftPackageReference "RxOptional" */;
+			productName = RxOptional;
+		};
 		0EBF35282833E0070093800A /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0EBF35272833E0070093800A /* XCRemoteSwiftPackageReference "RxSwift" */;
